@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        titan: ['"Titan One"', 'cursive'], // add Titan One as "font-display"
+        spartan: ['"League Spartan"', 'sans-serif'],
+        sans: ['"League Spartan"', 'ui-sans-serif', 'system-ui'], // override default
       },
       animation: {
         bounce: 'bounce 1.5s infinite',

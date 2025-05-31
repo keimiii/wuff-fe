@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import SplashScreen from "./components/SplashScreen";
 import Header from './components/Header';
 import Hero from './components/sections/Hero';
@@ -20,8 +20,9 @@ function App() {
 
   return (
     <>
-    {isSplashVisible ? <SplashScreen /> : 
-    <div className="App">
+    <SplashScreen isVisible={isSplashVisible} />
+    {
+      !isSplashVisible && <div className="App">
       <Header />
       <main>
         <Hero />
