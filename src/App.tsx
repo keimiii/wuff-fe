@@ -2,11 +2,8 @@ import { useEffect, useState } from 'react';
 import SplashScreen from "./components/SplashScreen";
 import Header from './components/Header';
 import Hero from './components/sections/Hero';
-import About from './components/sections/About';
-import Services from './components/sections/Services';
-import Portfolio from './components/sections/Portfolio';
-import Contact from './components/sections/Contact';
-import Footer from './components/Footer';
+import AboutWuff from './components/sections/AboutWuff.tsx';
+import AboutQuokka from './components/sections/AboutQuokka.tsx';
 import './styles/animations.css';
 import Lenis from 'lenis';
 
@@ -36,12 +33,13 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <About />
-        <Services />
-        <Portfolio />
-        <Contact />
+        <AboutWuff />
+        <AboutQuokka />
+        {/*<Services />*/}
+        {/*<Portfolio />*/}
+        {/*<Contact />*/}
       </main>
-      <Footer />
+      {/*<Footer />*/}
     </div>
     }
     </>
