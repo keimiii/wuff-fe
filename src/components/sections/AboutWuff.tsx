@@ -3,7 +3,7 @@ import intro_wuff from '../../static/intro_wuff.png';
 
 const AboutWuff: React.FC = () => {
   return (
-    <section id="about" className="min-h-screen bg-black text-white py-10 flex items-center">
+    <section id="about_wuff" className="min-h-screen bg-black text-white py-10 flex items-center">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           

@@ -4,7 +4,7 @@ import bg from '../../static/grass_bg.png';
 
 const Hero: React.FC = () => {
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById('about');
+    const nextSection = document.getElementById('about_wuff');
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
     }

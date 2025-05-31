@@ -3,7 +3,7 @@ import intro_quokka from '../../static/intro_quokka.png';
 
 const AboutQuokka: React.FC = () => {
   return (
-    <section id="about" className="min-h-screen bg-black text-white py-10 flex items-center">
+    <section id="about_quokka" className="min-h-screen bg-black text-white py-10 flex items-center">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           
