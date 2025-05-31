@@ -20,10 +20,10 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ isVisible }) => {
           {/* Text swooping in from the left */}
           <motion.div
             initial={{ x: "-100vw" }}
-            animate={{ x: "-5vw" }}
+            animate={{ x: "0vw" }}
             exit={{ x: "-100vw" }}
             transition={{ type: "spring", stiffness: 60, damping: 12 }}
-            className="text-black font-extrabold text-[25vw] leading-[0.9] whitespace-pre-line"
+            className="font-titan text-black font-bold text-[20vw] leading-[0.9] whitespace-pre-line"
           >
             MY NAME<br />WUFF
           </motion.div>

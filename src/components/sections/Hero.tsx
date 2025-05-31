@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
+import bg from '../../static/grass_bg.png';
 
 const Hero: React.FC = () => {
   const scrollToNextSection = () => {
@@ -10,26 +11,18 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="h-screen bg-white flex items-center justify-center relative">
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-          Design That
-          <span className="block md:inline"> Inspires</span>
+    <section id="home" className="h-screen flex items-center justify-center relative"
+             style={{
+                 background: `url(${bg})`,
+                 backgroundPosition: 'center 45%',
+                 backgroundSize: 'cover',
+                 backgroundRepeat: 'no-repeat'
+             }}
+    >
+      <div className="container h-3/5 mx-auto px-4 text-center">
+        <h1 className="top-4/5 font-titan text-white text-4xl md:text-6xl lg:text-7xl mb-2">
+          MEET WUFF
         </h1>
-        <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-12 text-gray-700">
-          Creating beautiful digital experiences that elevate your brand
-        </p>
-        <button 
-          className="inline-flex items-center px-6 py-3 border-2 border-black text-black font-medium rounded-full hover:bg-black hover:text-white transition-colors duration-300"
-          onClick={() => {
-            const aboutSection = document.getElementById('about');
-            if (aboutSection) {
-              aboutSection.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
-        >
-          Discover More
-        </button>
       </div>
       
       <button 

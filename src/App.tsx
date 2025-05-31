@@ -8,10 +8,20 @@ import Portfolio from './components/sections/Portfolio';
 import Contact from './components/sections/Contact';
 import Footer from './components/Footer';
 import './styles/animations.css';
+import Lenis from 'lenis';
 
 function App() {
   const [isSplashVisible, setIsSplashVisible] = useState(true);
+  const lenis = new Lenis();
 
+  lenis.on('scroll', (e) => {
+    console.log(e)
+  })
+  function raf(time: number) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  requestAnimationFrame(raf)
 
   useEffect(() => {
     const timeout = setTimeout(() => setIsSplashVisible(false), 2000); // 2 sec
