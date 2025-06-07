@@ -9,7 +9,7 @@ const AboutQuokka: React.FC = () => {
           
           <div className="grid md:grid-cols-2 gap-12">
             <div className="opacity-0 animate-slideInLeft animation-delay-300">
-              <h3 className="font-bold mb-4 text-7xl">the <span className={"emerald-500"}>sidekick</span></h3>
+              <h3 className="font-bold mb-4 text-7xl">the <span className={"text-emerald-500"}>sidekick</span></h3>
             </div>
             
             <div className="opacity-0 animate-slideInRight animation-delay-600">

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import SplashScreen from "./components/SplashScreen";
 import Header from './components/Header';
-import Hero from './components/sections/Hero';
+import Landing from './components/sections/Landing.tsx';
 import AboutWuff from './components/sections/AboutWuff.tsx';
 import AboutQuokka from './components/sections/AboutQuokka.tsx';
+import Laws from './components/sections/Laws.tsx';
 import './styles/animations.css';
 import Lenis from 'lenis';
 
@@ -21,7 +22,7 @@ function App() {
   requestAnimationFrame(raf)
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsSplashVisible(false), 2000); // 2 sec
+    const timeout = setTimeout(() => setIsSplashVisible(false), 0); // 2 sec
     return () => clearTimeout(timeout);
   }, []);
 
@@ -29,18 +30,16 @@ function App() {
     <>
     <SplashScreen isVisible={isSplashVisible} />
     {
-      !isSplashVisible && <div className="App">
+      !isSplashVisible && 
+      <div className="App">
       <Header />
-      <main>
-        <Hero />
-        <AboutWuff />
-        <AboutQuokka />
-        {/*<Services />*/}
-        {/*<Portfolio />*/}
-        {/*<Contact />*/}
-      </main>
-      {/*<Footer />*/}
-    </div>
+        <main>
+          <Landing />
+          <AboutWuff />
+          <AboutQuokka />
+          <Laws />
+        </main>
+      </div>
     }
     </>
   );
