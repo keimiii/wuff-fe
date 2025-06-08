@@ -5,6 +5,7 @@ import Landing from './components/sections/Landing.tsx';
 import AboutWuff from './components/sections/AboutWuff.tsx';
 import AboutQuokka from './components/sections/AboutQuokka.tsx';
 import Laws from './components/sections/Laws.tsx';
+import FollowCursor from "./components/CursorQuokka.tsx";
 import './styles/animations.css';
 import Lenis from 'lenis';
 
@@ -32,7 +33,8 @@ function App() {
     {
       !isSplashVisible && 
       <div className="App">
-      <Header />
+        <FollowCursor />
+        <Header />
         <main>
           <Landing />
           <AboutWuff />
