@@ -1,22 +1,28 @@
 import React from 'react';
 import law1 from '../../static/law-1.png';
+import law2 from '../../static/law-2.png';
+import law3 from '../../static/law-3.png';
+import law4 from '../../static/law-4.png';
 
 interface ProjectProps {
   title: string;
   imageUrl: string;
   index: number;
+  classNames: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ title, imageUrl, index }) => {
+const Project: React.FC<ProjectProps> = ({ title, imageUrl, index, classNames }) => {
+  const imgClass = `h-1/3 object-contain transition-transform duration-500 ${classNames}`;
+
   return (
-    <div 
+    <div
       className={`group relative opacity-0 animate-fadeIn`}
       style={{ animationDelay: `${index * 200}ms` }}
     >
-      <img 
-        src={imageUrl} 
+      <img
+        src={imageUrl}
         alt={title}
-        className="w-4/5 object-contain transition-transform duration-500"
+        className={imgClass}
       />
     </div>
   );
@@ -24,14 +30,33 @@ const Project: React.FC<ProjectProps> = ({ title, imageUrl, index }) => {
 
 const Laws: React.FC = () => {
   return (
-    <section id="laws" className="min-h-screen w-full bg-amber-300 text-white">
+    <section id="laws" className="min-h-screen w-full bg-amber-300 p-16 text-white">
       <div className="container mx-auto">
-        <h2 className="font-titan text-black text-4xl md:text-5xl lg:text-6xl font-bold pt-20 pb-16 text-center">LAW OF VIBES</h2>
-        <div className="">
+        <h2 className="font-titan text-black text-4xl md:text-5xl lg:text-6xl font-bold pt-4 mb-16 text-center">LAW OF VIBES</h2>
+        <div className="border-8 border-black border-solid">
           <Project 
             title='law_one'
             imageUrl={law1}
             index={1}
+            classNames='left-0 pt-8'
+          />
+          <Project
+              title='law_two'
+              imageUrl={law2}
+              index={2}
+              classNames='right-0'
+          />
+          <Project
+              title='law_three'
+              imageUrl={law3}
+              index={3}
+              classNames='left-0'
+          />
+          <Project
+              title='law_four'
+              imageUrl={law4}
+              index={4}
+              classNames='right-0 pb-8'
           />
         </div>
       </div>
