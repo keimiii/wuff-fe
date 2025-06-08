@@ -1,5 +1,4 @@
 import Logo from './Logo';
-import NavigationMenu from './NavigationMenu';
 import React from "react";
 
 const Header: React.FC = () => {
@@ -9,7 +8,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Logo />
-        <NavigationMenu />
+        {/*<NavigationMenu />*/}
       </div>
     </header>
   );
