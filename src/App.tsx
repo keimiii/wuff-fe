@@ -45,7 +45,7 @@ function App() {
 
   return (
     <>
-    <SplashScreen isVisible={isSplashVisible} />
+    <SplashScreen isVisible={isSplashVisible} isMobile={isMobile}/>
     {
       !isSplashVisible && 
       <div className="App">
