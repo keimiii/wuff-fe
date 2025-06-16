@@ -45,7 +45,7 @@ const FollowCursor: React.FC = () => {
 
         window.addEventListener("mousemove", handleMove);
 
-        // 👇 check every 360ms for inactivity
+        // Check every 360ms for inactivity
         const interval = setInterval(() => {
             const now = performance.now();
             if (now - lastMoveTime.current > 520) {

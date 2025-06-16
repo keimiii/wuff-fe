@@ -12,7 +12,7 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({ title, imageUrl, index, classNames }) => {
-  const imgClass = `h-1/3 object-contain transition-transform duration-500 ${classNames}`;
+  const imgClass = `md:h-1/3 object-contain transition-transform duration-500 ${classNames}`;
 
   return (
     <div
@@ -32,8 +32,8 @@ const Laws: React.FC = () => {
   return (
     <section id="laws" className="min-h-screen w-full bg-amber-300 md:p-16 text-white">
       <div className="container mx-auto">
-        <h2 className="font-titan text-black text-4xl md:text-5xl lg:text-6xl font-bold pt-4 md:mb-16 text-center">LAW OF VIBES</h2>
-        <div className="md:border-8 md:border-black md:border-solid">
+        <h2 className="font-titan -rotate-6 text-black text-4xl md:text-5xl lg:text-6xl font-bold pt-4 md:mb-16 text-center">LAW OF VIBES</h2>
+        <div className="md:border-8 md:-rotate-6 md:border-black md:border-solid">
           <Project 
             title='law_one'
             imageUrl={law1}
