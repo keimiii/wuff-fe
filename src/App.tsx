@@ -12,6 +12,19 @@ import Lenis from 'lenis';
 function App() {
   const [isSplashVisible, setIsSplashVisible] = useState(true);
   const lenis = new Lenis();
+  const [width, setWidth] = useState<number>(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    }
+  }, []);
+
+  const isMobile = width <= 768;
 
   lenis.on('scroll', (e) => {
     console.log(e)
@@ -33,7 +46,7 @@ function App() {
     {
       !isSplashVisible && 
       <div className="App">
-        <FollowCursor />
+        {isMobile ? null : <FollowCursor />}
         <Header />
         <main>
           <Landing />

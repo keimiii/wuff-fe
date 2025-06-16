@@ -30,15 +30,15 @@ const Project: React.FC<ProjectProps> = ({ title, imageUrl, index, classNames })
 
 const Laws: React.FC = () => {
   return (
-    <section id="laws" className="min-h-screen w-full bg-amber-300 p-16 text-white">
+    <section id="laws" className="min-h-screen w-full bg-amber-300 md:p-16 text-white">
       <div className="container mx-auto">
-        <h2 className="font-titan text-black text-4xl md:text-5xl lg:text-6xl font-bold pt-4 mb-16 text-center">LAW OF VIBES</h2>
-        <div className="border-8 border-black border-solid">
+        <h2 className="font-titan text-black text-4xl md:text-5xl lg:text-6xl font-bold pt-4 md:mb-16 text-center">LAW OF VIBES</h2>
+        <div className="md:border-8 md:border-black md:border-solid">
           <Project 
             title='law_one'
             imageUrl={law1}
             index={1}
-            classNames='left-0 pt-8'
+            classNames='left-0 md:pt-8'
           />
           <Project
               title='law_two'
@@ -56,7 +56,7 @@ const Laws: React.FC = () => {
               title='law_four'
               imageUrl={law4}
               index={4}
-              classNames='right-0 pb-8'
+              classNames='right-0 md:pb-8 pb-4'
           />
         </div>
       </div>
