@@ -1,4 +1,7 @@
 import { useEffect, useState } from 'react';
+import './styles/animations.css';
+import Lenis from 'lenis';
+
 import SplashScreen from "./components/SplashScreen";
 import Header from './components/Header';
 import Landing from './components/sections/Landing.tsx';
@@ -6,8 +9,8 @@ import AboutWuff from './components/sections/AboutWuff.tsx';
 import AboutQuokka from './components/sections/AboutQuokka.tsx';
 import Laws from './components/sections/Laws.tsx';
 import FollowCursor from "./components/CursorQuokka.tsx";
-import './styles/animations.css';
-import Lenis from 'lenis';
+import ComicWuff from "./components/sections/ComicWuff.tsx";
+import ComicQuokka from "./components/sections/ComicQuokka.tsx";
 
 function App() {
   const [isSplashVisible, setIsSplashVisible] = useState(true);
@@ -36,7 +39,7 @@ function App() {
   requestAnimationFrame(raf)
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsSplashVisible(false), 0); // 2 sec
+    const timeout = setTimeout(() => setIsSplashVisible(false), 1500); // 1.5 sec
     return () => clearTimeout(timeout);
   }, []);
 
@@ -51,7 +54,9 @@ function App() {
         <main>
           <Landing />
           <AboutWuff />
+          <ComicWuff />
           <AboutQuokka />
+          <ComicQuokka />
           <Laws />
         </main>
       </div>

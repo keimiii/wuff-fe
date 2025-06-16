@@ -8,11 +8,11 @@ const AboutQuokka: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="opacity-0 animate-slideInLeft animation-delay-300">
+            <div className="opacity-0 animate-slideInLeft animation-delay-900">
               <h3 className="font-bold mb-4 text-7xl">the <span className={"text-emerald-500"}>sidekick</span></h3>
             </div>
             
-            <div className="opacity-0 animate-slideInRight animation-delay-600">
+            <div className="opacity-0 animate-slideInRight animation-delay-1200">
               <img src={intro_quokka}  alt='intro_quokka'/>
             </div>
           </div>
