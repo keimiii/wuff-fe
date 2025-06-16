@@ -4,11 +4,10 @@ import React from "react";
 const Header: React.FC = () => {
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out bg-transparent`}
     >
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Logo />
-        {/*<NavigationMenu />*/}
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center bg-transparent">
+        <Logo/>
       </div>
     </header>
   );

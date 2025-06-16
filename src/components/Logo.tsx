@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../public/logo.svg';
+import logo from '../public/logo.png';
 
 const Logo: React.FC = () => {
   return (
-    <div className="flex items-center gap-2">
-        <img className="w-1/4 mix-blend-difference" src={logo}  alt={'wuff-logo'}/>
+    <div className="mix-blend-difference">
+        <img className="w-24 " src={logo}  alt={'wuff-logo'}/>
     </div>
   );
 };
