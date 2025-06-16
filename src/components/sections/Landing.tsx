@@ -13,7 +13,7 @@ const Landing: React.FC = () => {
 
   return (
     <section id="home" className="h-screen flex items-center justify-center relative">
-      <video id='bg-video' className='videoTag max-h-dvh min-w-screen z-[-1]' autoPlay loop muted>
+      <video id='bg-video' className='videoTag max-h-dvh min-w-screen' autoPlay loop muted>
         <source src={bg} type='video/mp4'/>
       </video>
       <div className="container h-2/5 mx-auto px-4 text-center">

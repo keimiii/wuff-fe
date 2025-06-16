@@ -77,7 +77,7 @@ const FollowCursor: React.FC = () => {
             <img
                 src={getCharacterImage()}
                 alt={animation}
-                className={`w-20 h-20 transform ${facingLeft ? "-scale-x-100" : ""}`}
+                className={`${animation == "idle" ? "w-14 h-14" : "w-20 h-20"} transform ${facingLeft ? "-scale-x-100" : ""}`}
             />
         </motion.div>
     );
