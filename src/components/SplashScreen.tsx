@@ -4,17 +4,14 @@ import wuff from '../public/wuff.png';
 
 interface SplashScreenProps {
   isVisible: boolean;
-  isMobile: boolean;
 }
 
-const SplashScreen: React.FC<SplashScreenProps> = ({ isVisible, isMobile }) => {
+const SplashScreen: React.FC<SplashScreenProps> = ({ isVisible }) => {
   return (
     <AnimatePresence>
       {isVisible && (
         <motion.div
           className="fixed w-screen inset-0 z-50 flex items-center justify-between bg-white"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8 }}
         >
@@ -30,7 +27,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ isVisible, isMobile }) => {
           </motion.div>
 
           {/* Dog image swooping in from the right */}
-          {!isMobile && <motion.img
+          <motion.img
               src={wuff}
               alt="wuff"
               className="right-0 bottom-0 w-auto h-[100vh]"
@@ -39,8 +36,6 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ isVisible, isMobile }) => {
               exit={{ x: "100vw", rotate: -10 }}
               transition={{ type: "spring", stiffness: 60, damping: 12 }}
           />
-          }
-
         </motion.div>
       )}
     </AnimatePresence>
