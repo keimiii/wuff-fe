@@ -7,10 +7,12 @@ const AboutWuff: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 md:gap-12">
             <div className="opacity-0 animate-slideInLeft animation-delay-300">
-              <h3 className="font-bold mb-4 text-7xl">the <span className={"text-blue-600"}>artist</span></h3>
-              <h3 className="font-bold mb-4 text-7xl">the one and only</h3>
+              <h3 className="font-bold mb-4 md:mb-8 text-5xl md:text-7xl">The <span className={"text-blue-600"}>dog</span></h3>
+              <h3 className="font-bold mb-4 md:mb-8 text-2xl md:text-4xl">He can't be bothered, loves his friends</h3>
+              <h3 className="font-bold mb-4 md:mb-8 text-2xl md:text-4xl">Underdog with main character energy</h3>
+              <h3 className="font-bold mb-4 md:mb-8 text-2xl md:text-4xl">Farming aura in his free time</h3>
             </div>
             
             <div className="opacity-0 animate-slideInRight animation-delay-600">

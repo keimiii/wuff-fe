@@ -72,7 +72,7 @@ const FollowCursor: React.FC = () => {
         <motion.div
             className="fixed pointer-events-none z-50"
             animate={{ x: pos.x, y: pos.y }}
-            transition={{ type: "spring", damping: 30, stiffness: 300 }}
+            transition={{ type: "spring", damping: 60, stiffness: 300 }}
         >
             <img
                 src={getCharacterImage()}
