@@ -20,10 +20,10 @@ const Header: React.FC = () => {
         </a>
         <div className="flex flex-row gap-4 md:gap-8">
           {/*TODO: Add social media links*/}
-          <a href={'https://x.com/wuffishere'} target="_blank"><img className="w-6 md:w-8" src={logo_x} alt={'logo-x'}/></a>
-          <a href={'/'} target="_blank"><img className="w-6 md:w-8" src={logo_telegram} alt={'logo-telegram'}/></a>
-          <a href={'/'} target="_blank"><img className="w-6 md:w-8" src={logo_boop} alt={'logo-boop'}/></a>
-          <a href={'/'} target="_blank"><img className="w-6 md:w-8" src={logo_dex} alt={'logo-dex'}/></a>
+          <a href={'https://x.com/wuffishere'} target="_blank"><img className="w-6 md:w-8 hover:invert" src={logo_x} alt={'logo-x'}/></a>
+          <a href={'/'} target="_blank"><img className="w-6 md:w-8 hover:invert" src={logo_telegram} alt={'logo-telegram'}/></a>
+          <a href={'/'} target="_blank"><img className="w-6 md:w-8 hover:invert" src={logo_boop} alt={'logo-boop'}/></a>
+          <a href={'/'} target="_blank"><img className="w-6 md:w-8 hover:invert" src={logo_dex} alt={'logo-dex'}/></a>
         </div>
       </div>
     </header>
